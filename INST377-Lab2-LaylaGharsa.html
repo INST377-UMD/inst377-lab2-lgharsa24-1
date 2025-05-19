@@ -1,0 +1,58 @@
+<html>
+<head>
+<title> Submit a Quote </title>
+<style>
+    body{
+        background-color:rgb(128, 128, 236);
+    }
+    .form{
+        margin: 10px;
+        padding: 15px;
+        width: 300px;
+    }
+    label{
+        font-size: 20px;
+        display: block;
+        margin-top: 20px;
+    }
+    .submit-button{
+        background-color: rgb(252, 249, 249);
+        color:rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: larger;
+    }
+    .submit-button:hover {
+        background-color: crimson;
+    }
+</style>
+<body>
+<h1> Auto Repair Quote</h1>
+<h3> Submit a request below and we'll email you a quote </h3>
+<form name="SubmitQuote" method="get" action="INST377-Week2_FormSuccess.html">
+    <div class = "form">
+        <label for="FirstName">First Name:</label>
+        <input type="text" required>
+        <br>
+        <label for="LastName">Last Name:</label>
+        <input type="text" required>
+        <br>
+        <hr>
+        <label for="Preffered Appointment">Preffered Appointment:</label>
+        <input type="datetime-local" required>
+        <br>
+
+       
+        <label for="reason">Inquiry Type:</label> <br>
+        <input type="radio" name="reason ">Media Inquires <br>
+        <input type="radio" name="reason">General Inquires <br>
+        <input type="radio" name="reason">Corporate Inquires <br>
+        <br>
+        <input type ="submit" value = "Submit" class = "submit-button">
+       
+    </div>
+</body>
+
+
+</head>
+
+</html>
